@@ -35,7 +35,7 @@ PluginConfiguration ADDPR(config) {
 	KernelVersion::MountainLion,
 	KernelVersion::BigSur,
 	[]() {
-		AlcEnabler::createShared();
-		AlcEnabler::getShared()->init();
+		static AlcEnabler alc;
+		alc.init();
 	}
 };
