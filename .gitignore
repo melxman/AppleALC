@@ -6,7 +6,6 @@ xcshareddata
 project.xcworkspace
 *.zlib
 *.md5
-AppleALC/kern_resources.cpp
 build
 .svace-dir
 cov-int
