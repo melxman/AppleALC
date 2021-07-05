@@ -1,5 +1,12 @@
 AppleALC Changelog
 ==================
+#### v1.6.2
+- Added constants for macOS 12 support
+- Added 10.6 and 10.7 support in 64-bit mode
+- Fixed HDMI Audio 0xA171 for Acer VX5-591G by dongcodebmt
+- Added ALC256 layout-id 70 for Hasee KingBook X57S1 by m0d16l14n1
+- Update WakeConfigData for ALC255 layout-id 96 by wozhinengpa
+
 #### v1.6.1
 - Fixed broken data in CS4206's layout76.xml
 - Added PathMapID 4206 and 8800 for ALC885's Layout 67 and 73
@@ -13,6 +20,14 @@ AppleALC Changelog
 - Disabled kext patching for verb support and delays when not requested
 - FIxed replace count in `WhiskeyLake` HDA patches
 - Separated Intel `WhiskeyLake` laptop and desktop patches
+- Added ALC1220 layout-id 35 for MSI GP75 9SD by Win7GM
+- Added ALC1200 (display as ALCS1200A) layout-id 69 for Asrock Z490M ITX/AC by Lorys89 & Vorshim92
+- Added ALC293 layout-id 30 for HASEE ZX8-CT5DA by RushiaBoingBoing
+- Added ALC255 layout-id 96 for dell 5559 by Bhavin
+- Fix mute on Conxexant CX 20724 by Human7900
+- Added ALC1220 layout-id 17 for Gigabyte Z490 Vision G manual SP/HP by NIBLIZE
+- Added ALC255 layout-id 82 for minisforum U820 by daliansky
+- Added ALC282 layout-id 21 for TinyMonster ECO by DalianSky
 
 #### v1.6.0
 - Added `use-layout-id` property to use `layout-id` as is on Macs
