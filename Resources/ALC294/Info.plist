@@ -38,6 +38,14 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>Realtek ALC294, UX434</string>
+				<key>Id</key>
+				<integer>15</integer>
+				<key>Path</key>
+				<string>layout15.xml.zlib</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>Andres ZeroCross</string>
 				<key>Id</key>
 				<integer>21</integer>
@@ -54,6 +62,14 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>Theroadw - Realtek ALC294 for Asus rog strix g512li</string>
+				<key>Id</key>
+				<integer>24</integer>
+				<key>Path</key>
+				<string>layout24.xml.zlib</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>Ayat Kyo - Realtek ALC294 for Asus ROG G531GD</string>
 				<key>Id</key>
 				<integer>28</integer>
@@ -62,11 +78,27 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>narcyzzo - Realtek ALC294 for ASUS UX534FAC</string>
+				<key>Id</key>
+				<integer>44</integer>
+				<key>Path</key>
+				<string>layout44.xml.zlib</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>KKKIIINNN - Realtek ALC294 for ASUS X542UQR</string>
 				<key>Id</key>
 				<integer>66</integer>
 				<key>Path</key>
 				<string>layout66.xml.zlib</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>hoping - Realtek ALC294 for ASUS ROG GU502LV</string>
+				<key>Id</key>
+				<integer>99</integer>
+				<key>Path</key>
+				<string>layout99.xml.zlib</string>
 			</dict>
 		</array>
 		<key>Platforms</key>
@@ -97,6 +129,14 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>Realtek ALC294, UX434</string>
+				<key>Id</key>
+				<integer>15</integer>
+				<key>Path</key>
+				<string>Platforms15.xml.zlib</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>Andres ZeroCross</string>
 				<key>Id</key>
 				<integer>21</integer>
@@ -113,6 +153,14 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>Theroadw - Realtek ALC294 for Asus rog strix g512li</string>
+				<key>Id</key>
+				<integer>24</integer>
+				<key>Path</key>
+				<string>Platforms24.xml.zlib</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>Ayat Kyo - Realtek ALC294 for Asus ROG G531GD</string>
 				<key>Id</key>
 				<integer>28</integer>
@@ -121,11 +169,27 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>narcyzzo - Realtek ALC294 for ASUS UX534FAC</string>
+				<key>Id</key>
+				<integer>44</integer>
+				<key>Path</key>
+				<string>Platforms44.xml.zlib</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>KKKIIINNN - Realtek ALC294 for ASUS X542UQR</string>
 				<key>Id</key>
 				<integer>66</integer>
 				<key>Path</key>
 				<string>Platforms66.xml.zlib</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>hoping - Realtek ALC294 for ASUS ROG GU502LV</string>
+				<key>Id</key>
+				<integer>99</integer>
+				<key>Path</key>
+				<string>Platforms99.xml.zlib</string>
 			</dict>
 		</array>
 	</dict>

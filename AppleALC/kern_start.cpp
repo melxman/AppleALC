@@ -32,8 +32,8 @@ PluginConfiguration ADDPR(config) {
 	arrsize(bootargDebug),
 	bootargBeta,
 	arrsize(bootargBeta),
-	KernelVersion::MountainLion,
-	KernelVersion::BigSur,
+	KernelVersion::Tiger,
+	KernelVersion::Tahoe,
 	[]() {
 		AlcEnabler::createShared();
 		AlcEnabler::getShared()->init();

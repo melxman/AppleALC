@@ -14,6 +14,14 @@
 		<array>
 			<dict>
 				<key>Comment</key>
+				<string>hua0512 - Realtek ALC269 for Medium Akoya P6653</string>
+				<key>Id</key>
+				<integer>25</integer>
+				<key>Path</key>
+				<string>layout25.xml.zlib</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>Custom ALC269VD ThinkPad T430</string>
 				<key>Id</key>
 				<integer>23</integer>
@@ -206,6 +214,14 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>Andres ZeroCross - ALC269 for Infinix X1 XL11</string>
+				<key>Id</key>
+				<integer>26</integer>
+				<key>Path</key>
+				<string>layout26.xml.zlib</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>Custom ALC269 Acer Aspire by Andrey1970</string>
 				<key>Id</key>
 				<integer>27</integer>
@@ -262,11 +278,35 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>Custom ALC269-VC Samsung np540U4E by majonez</string>
+				<key>Id</key>
+				<integer>34</integer>
+				<key>Path</key>
+				<string>layout34.xml.zlib</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>Custom ALC269VC for Samsung NP350V5C-S0URU by Mirone</string>
 				<key>Id</key>
 				<integer>35</integer>
 				<key>Path</key>
 				<string>layout35.xml.zlib</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>ALC269</string>
+				<key>Id</key>
+				<integer>36</integer>
+				<key>Path</key>
+				<string>layout36.xml.zlib</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Ar4eR07 - ALC269VB for Tecno T1 IceLake</string>
+				<key>Id</key>
+				<integer>37</integer>
+				<key>Path</key>
+				<string>layout37.xml.zlib</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -318,6 +358,14 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>Vorshim92 - Realtek ALC269 - GF63 Thin 9SEXR</string>
+				<key>Id</key>
+				<integer>69</integer>
+				<key>Path</key>
+				<string>layout69.xml.zlib</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>Custom ALC269VB ENZ C16B by jimmy19990</string>
 				<key>Id</key>
 				<integer>76</integer>
@@ -355,6 +403,14 @@
 				<integer>100</integer>
 				<key>Path</key>
 				<string>layout100.xml.zlib</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>ALC269 for minisforum NAG6 by DalianSky</string>
+				<key>Id</key>
+				<integer>111</integer>
+				<key>Path</key>
+				<string>layout111.xml.zlib</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -404,9 +460,57 @@
 				<key>Path</key>
 				<string>layout91.xml.zlib</string>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>5T33Z0 - Lenovo T530 with Dock 4337/4338</string>
+				<key>Id</key>
+				<integer>39</integer>
+				<key>Path</key>
+				<string>layout39.xml.zlib</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>jayveeballesteros - ALC269 for Fujitsu Esprimo D552</string>
+				<key>Id</key>
+				<integer>38</integer>
+				<key>Path</key>
+				<string>layout38.xml.zlib</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>aa820t - Realtek ALC269VC for Lenovo G480</string>
+				<key>Id</key>
+				<integer>138</integer>
+				<key>Path</key>
+				<string>layout138.xml.zlib</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Talha - Realtek ALC269VC for Acer Aspire Z3-715</string>
+				<key>Id</key>
+				<integer>89</integer>
+				<key>Path</key>
+				<string>layout89.xml.zlib</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>ALC269 for Infinix XBOOK B15 by kodeaqua</string>
+				<key>Id</key>
+				<integer>120</integer>
+				<key>Path</key>
+				<string>layout120.xml.zlib</string>
+			</dict>
 		</array>
 		<key>Platforms</key>
 		<array>
+			<dict>
+				<key>Comment</key>
+				<string>hua0512 - Realtek ALC269 for Medium Akoya P6653</string>
+				<key>Id</key>
+				<integer>25</integer>
+				<key>Path</key>
+				<string>Platforms25.xml.zlib</string>
+			</dict>
 			<dict>
 				<key>Comment</key>
 				<string>Custom ALC269VD ThinkPad T430</string>
@@ -601,6 +705,14 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>Andres ZeroCross - ALC269 for Infinix X1 XL11</string>
+				<key>Id</key>
+				<integer>26</integer>
+				<key>Path</key>
+				<string>Platforms26.xml.zlib</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>Custom ALC269 Acer Aspire by Andrey1970</string>
 				<key>Id</key>
 				<integer>27</integer>
@@ -657,11 +769,35 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>Custom ALC269-VC Samsung np540U4E by majonez</string>
+				<key>Id</key>
+				<integer>34</integer>
+				<key>Path</key>
+				<string>Platforms34.xml.zlib</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>Custom ALC269VC for Samsung NP350V5C-S0URU by Mirone</string>
 				<key>Id</key>
 				<integer>35</integer>
 				<key>Path</key>
 				<string>PlatformsM35.xml.zlib</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>ALC269</string>
+				<key>Id</key>
+				<integer>36</integer>
+				<key>Path</key>
+				<string>Platforms36.xml.zlib</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Ar4eR07 - ALC269VB for Tecno T1 IceLake</string>
+				<key>Id</key>
+				<integer>37</integer>
+				<key>Path</key>
+				<string>Platforms37.xml.zlib</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -713,6 +849,14 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>Vorshim92 - Realtek ALC269 - GF63 Thin 9SEXR</string>
+				<key>Id</key>
+				<integer>69</integer>
+				<key>Path</key>
+				<string>Platforms69.xml.zlib</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>Custom ALC269VB ENZ C16B by jimmy19990</string>
 				<key>Id</key>
 				<integer>76</integer>
@@ -750,6 +894,14 @@
 				<integer>100</integer>
 				<key>Path</key>
 				<string>Platforms100.xml.zlib</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>ALC269 for minisforum NAG6 by DalianSky</string>
+				<key>Id</key>
+				<integer>111</integer>
+				<key>Path</key>
+				<string>Platforms111.xml.zlib</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -798,6 +950,46 @@
 				<integer>91</integer>
 				<key>Path</key>
 				<string>Platforms91.xml.zlib</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>5T33Z0 - Lenovo T530 with Dock 4337/4338</string>
+				<key>Id</key>
+				<integer>39</integer>
+				<key>Path</key>
+				<string>Platforms39.xml.zlib</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>jayveeballesteros - ALC269 for Fujitsu Esprimo D552</string>
+				<key>Id</key>
+				<integer>38</integer>
+				<key>Path</key>
+				<string>Platforms38.xml.zlib</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>aa820t - Realtek ALC269VC for Lenovo G480</string>
+				<key>Id</key>
+				<integer>138</integer>
+				<key>Path</key>
+				<string>Platforms138.xml.zlib</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Talha - Realtek ALC269VC for Acer Aspire Z3-715</string>
+				<key>Id</key>
+				<integer>89</integer>
+				<key>Path</key>
+				<string>Platforms89.xml.zlib</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>ALC269 for Infinix XBOOK B15 by kodeaqua</string>
+				<key>Id</key>
+				<integer>120</integer>
+				<key>Path</key>
+				<string>Platforms120.xml.zlib</string>
 			</dict>
 		</array>
 	</dict>

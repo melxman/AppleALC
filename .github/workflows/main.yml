@@ -9,6 +9,7 @@ on:
 
 env:
   PROJECT_TYPE: KEXT
+  ACID32: 1
 
 jobs:
   build:
@@ -17,8 +18,8 @@ jobs:
     env:
       JOB_TYPE: BUILD
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v5
+      - uses: actions/checkout@v5
         with:
           repository: acidanthera/MacKernelSDK
           path: MacKernelSDK
@@ -29,17 +30,17 @@ jobs:
         run: |
           src=$(/usr/bin/curl -Lfs https://raw.githubusercontent.com/acidanthera/Lilu/master/Lilu/Scripts/bootstrap.sh) && eval "$src" || exit 1
 
-      - run: xcodebuild -jobs 1 -configuration Debug
-      - run: xcodebuild -jobs 1 -configuration Release
+      - run: xcodebuild -jobs 1 -configuration Debug -arch ACID32 -arch x86_64
+      - run: xcodebuild -jobs 1 -configuration Release -arch ACID32 -arch x86_64
 
       - name: Upload to Artifacts
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v6
         with:
           name: Artifacts
           path: build/*/*.zip
       - name: Upload to Release
         if: github.event_name == 'release'
-        uses: svenstaro/upload-release-action@e74ff71f7d8a4c4745b560a485cc5fdb9b5b999d
+        uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file: build/*/*.zip
@@ -52,8 +53,8 @@ jobs:
     env:
       JOB_TYPE: ANALYZE
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v5
+      - uses: actions/checkout@v5
         with:
           repository: acidanthera/MacKernelSDK
           path: MacKernelSDK
@@ -64,18 +65,19 @@ jobs:
         run: |
           src=$(/usr/bin/curl -Lfs https://raw.githubusercontent.com/acidanthera/Lilu/master/Lilu/Scripts/bootstrap.sh) && eval "$src" || exit 1
 
-      - run: xcodebuild analyze -quiet -scheme AppleALC -configuration Debug CLANG_ANALYZER_OUTPUT=plist-html CLANG_ANALYZER_OUTPUT_DIR="$(pwd)/clang-analyze" && [ "$(find clang-analyze -name "*.html")" = "" ]
-      - run: xcodebuild analyze -quiet -scheme AppleALC -configuration Release CLANG_ANALYZER_OUTPUT=plist-html CLANG_ANALYZER_OUTPUT_DIR="$(pwd)/clang-analyze" && [ "$(find clang-analyze -name "*.html")" = "" ]
+      - run: xcodebuild analyze -quiet -scheme AppleALC -configuration Debug -arch ACID32 -arch x86_64 CLANG_ANALYZER_OUTPUT=plist-html CLANG_ANALYZER_OUTPUT_DIR="$(pwd)/clang-analyze" && [ "$(find clang-analyze -name "*.html")" = "" ]
+      - run: xcodebuild analyze -quiet -scheme AppleALC -configuration Release -arch ACID32 -arch x86_64 CLANG_ANALYZER_OUTPUT=plist-html CLANG_ANALYZER_OUTPUT_DIR="$(pwd)/clang-analyze" && [ "$(find clang-analyze -name "*.html")" = "" ]
 
   analyze-coverity:
     name: Analyze Coverity
-    runs-on: macos-latest
+    runs-on: macos-12
     env:
       JOB_TYPE: COVERITY
-    if: github.repository_owner == 'acidanthera' && github.event_name != 'pull_request'
+    # Disabled: macos-12 runners are retired and the job stays queued forever
+    if: false && github.repository_owner == 'acidanthera' && github.event_name != 'pull_request'
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
           repository: acidanthera/MacKernelSDK
           path: MacKernelSDK

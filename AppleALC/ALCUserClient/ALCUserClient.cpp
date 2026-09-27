@@ -12,6 +12,7 @@
 
 OSDefineMetaClassAndStructors(ALCUserClient, IOUserClient);
 
+#if __MAC_OS_X_VERSION_MIN_REQUIRED > __MAC_10_4
 const IOExternalMethodDispatch ALCUserClient::sMethods[kNumberOfMethods] = {
 	{ //kMethodExecuteVerb
 		reinterpret_cast<IOExternalMethodAction>(&ALCUserClient::methodExecuteVerb),	// Method pointer
@@ -33,6 +34,41 @@ IOReturn ALCUserClient::externalMethod(uint32_t selector, IOExternalMethodArgume
 	
 	return super::externalMethod(selector, arguments, dispatch, target, reference);
 }
+
+#else
+IOExternalMethod ALCUserClient::sMethodsLegacy[kNumberOfMethods] = {
+	{ //kMethodExecuteVerb
+		NULL,
+#if (defined(__i386__) && defined(__clang__))
+		kIOExternalMethodACID32Padding,
+		(IOMethodACID32) &ALCUserClient::sendHdaCommandInternal,
+#else
+		(IOMethod) &ALCUserClient::sendHdaCommandInternal,
+#endif
+		kIOUCScalarIScalarO,
+		3,
+		1
+	}
+};
+
+IOExternalMethod* ALCUserClient::getTargetAndMethodForIndex(IOService **targetP, UInt32 index) {
+	if (index >= kNumberOfMethods)
+		return NULL;
+
+	*targetP = this;
+	return reinterpret_cast<IOExternalMethod*>(&sMethodsLegacy[index]);
+}
+
+#if (defined(__i386__) && defined(__clang__))
+IOReturn ALCUserClient::sendHdaCommandInternal(ALCUserClient *that, uint16_t nid, uint16_t verb, uint16_t param, uint64_t *outVal) {
+	*outVal = that->mProvider->sendHdaCommand(nid, verb, param);
+#else
+IOReturn ALCUserClient::sendHdaCommandInternal(uint16_t nid, uint16_t verb, uint16_t param, uint64_t *outVal) {
+	*outVal = mProvider->sendHdaCommand(nid, verb, param);
+#endif
+	return kIOReturnSuccess;
+}
+#endif
 
 bool ALCUserClient::initWithTask(task_t owningTask, void* securityToken, UInt32 type, OSDictionary* properties) {
 	if (!owningTask)

@@ -86,6 +86,22 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>NIBLIZE - ALC1220 for Gigabyte Z490 Vision G manual SP/HP</string>
+				<key>Id</key>
+				<integer>17</integer>
+				<key>Path</key>
+				<string>layout17.xml.zlib</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>CaseySJ - ALC1220 for Gigabyte B550 Vision D</string>
+				<key>Id</key>
+				<integer>20</integer>
+				<key>Path</key>
+				<string>layout20.xml.zlib</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>ALC1220 for MSI GE63 Raider RGB 8RF</string>
 				<key>Id</key>
 				<integer>21</integer>
@@ -134,6 +150,22 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>Custom ALC1220 for MSI GP75 9SD by Win7GM</string>
+				<key>Id</key>
+				<integer>35</integer>
+				<key>Path</key>
+				<string>layout35.xml.zlib</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Lorys89 ALC1220 for AMD B450/B550 - SwitchMode</string>
+				<key>Id</key>
+				<integer>69</integer>
+				<key>Path</key>
+				<string>layout69.xml.zlib</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>Custom ALC1220 for Mi Gaming Notebook Creator by Xsixu</string>
 				<key>Id</key>
 				<integer>98</integer>
@@ -155,6 +187,22 @@
 				<integer>100</integer>
 				<key>Path</key>
 				<string>layout100.xml.zlib</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>MSI GE 73 RAIDER RGB 8RF</string>
+				<key>Id</key>
+				<integer>25</integer>
+				<key>Path</key>
+				<string>layout25.xml.zlib</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>hgsshaanxi - ALC1220 for Gigabyte Z490 Aorus Master</string>
+				<key>Id</key>
+				<integer>18</integer>
+				<key>Path</key>
+				<string>layout18.xml.zlib</string>
 			</dict>
 		</array>
 		<key>Platforms</key>
@@ -233,6 +281,22 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>NIBLIZE - ALC1220 for Gigabyte Z490 Vision G manual SP/HP</string>
+				<key>Id</key>
+				<integer>17</integer>
+				<key>Path</key>
+				<string>Platforms17.xml.zlib</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>CaseySJ - ALC1220 for Gigabyte B550 Vision D</string>
+				<key>Id</key>
+				<integer>20</integer>
+				<key>Path</key>
+				<string>Platforms20.xml.zlib</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>ALC1220 for MSI GE63 Raider RGB 8RF</string>
 				<key>Id</key>
 				<integer>21</integer>
@@ -281,6 +345,22 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>ALC1220 for MSI GP75 9SD</string>
+				<key>Id</key>
+				<integer>35</integer>
+				<key>Path</key>
+				<string>Platforms35.xml.zlib</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Lorys89 ALC1220 for AMD B450/B550 - SwitchMode</string>
+				<key>Id</key>
+				<integer>69</integer>
+				<key>Path</key>
+				<string>Platforms69.xml.zlib</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>Custom ALC1220 for Mi Gaming Notebook Creator by Xsixu</string>
 				<key>Id</key>
 				<integer>98</integer>
@@ -302,6 +382,22 @@
 				<integer>100</integer>
 				<key>Path</key>
 				<string>Platforms100.xml.zlib</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>MSI GE 73 RAIDER RGB 8RF</string>
+				<key>Id</key>
+				<integer>25</integer>
+				<key>Path</key>
+				<string>Platforms25.xml.zlib</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>hgsshaanxi - ALC1220 for Gigabyte Z490 Aorus Master</string>
+				<key>Id</key>
+				<integer>18</integer>
+				<key>Path</key>
+				<string>Platforms18.xml.zlib</string>
 			</dict>
 		</array>
 	</dict>
